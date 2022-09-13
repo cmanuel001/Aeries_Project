@@ -6,12 +6,17 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)         // calls on Cucumber
 @CucumberOptions(
-        plugin =  {"json:target/cucumber.json",
-                "html:target/default-html-reports"},
+        plugin = {"pretty",
+                "html:target/cucumber-report.html",
+                "rerun:target/rerun.txt",//stores failed scenario names into rerun.txt file
+                "json:target/cucumber-html-reports/cucumber.json"  //generate json execution report to be used for html report
+        },
         features = "src/test/resources/features",
-        glue = "com/aeriesparentportal/StepDefs",
-        tags = "@smoke",
-        dryRun = false                                 // true = will fail a scenario
+        glue = "com/aeriesparentportal/StepDefs/",
+        dryRun = true,
+        publish = true
+        //false=> run the test. true => checks for missing steps
+        // true = will fail a scenario
 )
 public class CukesRunner {
 }
