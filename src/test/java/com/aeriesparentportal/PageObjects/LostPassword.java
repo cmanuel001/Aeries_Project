@@ -47,4 +47,6 @@ public class LostPassword extends BasePage {
     @FindBy(xpath = "//input[@id='btnStep3Next']")
     public WebElement getNextBtn;
 
+
+
 }

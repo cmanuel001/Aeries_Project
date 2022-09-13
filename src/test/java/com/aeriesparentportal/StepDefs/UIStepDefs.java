@@ -79,4 +79,5 @@ public class UIStepDefs {
     public void aSuccessMessageBoxShouldBeDisplayed() {
         assertTrue(lostPassword.successBoxMsg.isDisplayed());
     }
+
 }

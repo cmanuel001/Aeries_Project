@@ -22,3 +22,4 @@ Feature: Login Functionality
     When no password entered
     Then error message "You must enter a password!" be displayed
 
+
