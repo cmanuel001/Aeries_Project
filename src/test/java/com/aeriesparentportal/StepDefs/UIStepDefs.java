@@ -75,7 +75,6 @@ public class UIStepDefs {
         assertEquals(header, lostPassword.getEmailVerHeader.getText());
     }
 
-
     @And("a success message box should be displayed")
     public void aSuccessMessageBoxShouldBeDisplayed() {
         assertTrue(lostPassword.successBoxMsg.isDisplayed());

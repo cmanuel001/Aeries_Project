@@ -9,7 +9,4 @@
       And a success message box should be displayed
 
 
-#      Scenario: User enters email code
-#        Given I enter email address
-#        And email passcode
 
