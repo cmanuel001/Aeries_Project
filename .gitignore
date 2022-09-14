@@ -2,4 +2,4 @@
 /.idea/
 /logs/
 *.xml
-configuration.properties
+.properties
